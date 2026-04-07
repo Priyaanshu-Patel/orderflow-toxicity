@@ -14,7 +14,8 @@ build/
 .eggs/
 
 # Logs
-logs/
+logs/*
+!logs/.gitkeep
 *.log
 nohup.out
 
@@ -36,5 +37,11 @@ Thumbs.db
 .env
 *.key
 
+# Generated analysis outputs (figures, CSVs) — keep gitkeep placeholder
+project1_ofi/results/*
+!project1_ofi/results/.gitkeep
+
 # Superpowers / Claude internals
 skills-lock.json
+.agents/
+.claude/
