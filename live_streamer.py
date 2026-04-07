@@ -289,8 +289,6 @@ class LiveStreamer:
             "trade_id": data["t"],
             "price": float(data["p"]),
             "quantity": float(data["q"]),
-            "buyer_order_id": data["b"],
-            "seller_order_id": data["a"],
             "trade_time": data["T"],
             "is_buyer_maker": data["m"],
             "trade_direction": -1 if data["m"] else 1,
